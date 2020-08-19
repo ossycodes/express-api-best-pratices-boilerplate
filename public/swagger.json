@@ -1,0 +1,250 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Boiler Plate NODEJS Express API Documentation",
+        "version": "v1"
+    },
+    "paths": {
+        "/api/v1/plans/{planId}": {
+            "get": {
+                "operationId": "getItemV2",
+                "summary": "Get an existing plan",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "200 OK",
+                        "examples": {
+                            "application/json": {
+                                "_id": "5a4c004b0eed73835833cc9a",
+                                "name": "planA",
+                                "type": "Sports Watch",
+                                "price": 100,
+                                "userId": "1",
+                                "__v": 0
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "404 Not Found"
+                    },
+                    "500": {
+                        "description": "500 Internal Server Error"
+                    }
+                }
+            },
+            "post": {
+                "404": {
+                    "description": "404 Not Found"
+                },
+                "500": {
+                    "description": "500 Internal Server Error"
+                },
+                "operationId": "postItemV2",
+                "summary": "Creates new or updates existing plan",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "name": "Sports Watch 19",
+                        "price": 100,
+                        "type": "USD",
+                        "userId": "1",
+                        "__v": 0
+                    },
+                    "201": {
+                        "name": "Sports Watch 19",
+                        "price": 100,
+                        "type": "USD",
+                        "userId": "1",
+                        "__v": 0
+                    },
+                    "500": "text/html"
+                }
+            },
+            "put": {
+                "404": {
+                    "description": "404 Not Found"
+                },
+                "500": {
+                    "description": "500 Internal Server Error"
+                },
+                "operationId": "putItemV2",
+                "summary": "Creates new or updates existing plan",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "name": "Sports Watch 19",
+                        "price": 100,
+                        "type": "USD",
+                        "userId": "1",
+                        "__v": 0
+                    },
+                    "201": {
+                        "name": "Sports Watch 19",
+                        "price": 100,
+                        "type": "USD",
+                        "userId": "1",
+                        "__v": 0
+                    },
+                    "500": "text/html"
+                }
+            },
+            "delete": {
+                "404": {
+                    "description": "404 Not Found"
+                },
+                "500": {
+                    "description": "500 Internal Server Error"
+                },
+                "operationId": "deleteItemV2",
+                "summary": "Deletes an existing plan",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "deleted": true
+                    },
+                    "500": "text/html"
+                }
+            }
+        },
+        "/api/v1/subscriptions/{subscriptionId}": {
+            "get": {
+                "operationId": "getItemV2",
+                "summary": "Get an existing item",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "200 OK",
+                        "examples": {
+                            "application/json": {
+                                "_id": "5a4c004b0eed73835833cc9a",
+                                "itemId": "1",
+                                "itemName": "Sports Watch",
+                                "price": 100,
+                                "currency": "EUR",
+                                "__v": 0,
+                                "categories": [
+                                    "Watches",
+                                    "Sports Watches"
+                                ]
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "404 Not Found"
+                    },
+                    "500": {
+                        "description": "500 Internal Server Error"
+                    }
+                }
+            },
+            "post": {
+                "404": {
+                    "description": "404 Not Found"
+                },
+                "500": {
+                    "description": "500 Internal Server Error"
+                },
+                "operationId": "postItemV2",
+                "summary": "Creates new or updates existing item",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "itemId": 19,
+                        "itemName": "Sports Watch 19",
+                        "price": 100,
+                        "currency": "USD",
+                        "__v": 0,
+                        "categories": [
+                            "Watches",
+                            "Sports Watches"
+                        ]
+                    },
+                    "201": {
+                        "itemId": 19,
+                        "itemName": "Sports Watch 19",
+                        "price": 100,
+                        "currency": "USD",
+                        "__v": 0,
+                        "categories": [
+                            "Watches",
+                            "Sports Watches"
+                        ]
+                    },
+                    "500": "text/html"
+                }
+            },
+            "put": {
+                "404": {
+                    "description": "404 Not Found"
+                },
+                "500": {
+                    "description": "500 Internal Server Error"
+                },
+                "operationId": "putItemV2",
+                "summary": "Creates new or updates existing item",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "itemId": 19,
+                        "itemName": "Sports Watch 19",
+                        "price": 100,
+                        "currency": "USD",
+                        "__v": 0,
+                        "categories": [
+                            "Watches",
+                            "Sports Watches"
+                        ]
+                    },
+                    "201": {
+                        "itemId": 19,
+                        "itemName": "Sports Watch 19",
+                        "price": 100,
+                        "currency": "USD",
+                        "__v": 0,
+                        "categories": [
+                            "Watches",
+                            "Sports Watches"
+                        ]
+                    },
+                    "500": "text/html"
+                }
+            },
+            "delete": {
+                "404": {
+                    "description": "404 Not Found"
+                },
+                "500": {
+                    "description": "500 Internal Server Error"
+                },
+                "operationId": "deleteItemV2",
+                "summary": "Deletes an existing item",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "deleted": true
+                    },
+                    "500": "text/html"
+                }
+            }
+        }
+    },
+    "consumes": [
+        "application/json"
+    ]
+}

@@ -1,0 +1,4 @@
+Why Services ?
+
+-> Seperation of concerns
+-> Services encapsulate the bussiness logic and the controllers are responsible for formatting input and output.
