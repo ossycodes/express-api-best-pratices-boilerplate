@@ -6,8 +6,8 @@
 - validation
 - Logging
 - swagger documentation
-- unit and functional tests using JEST (not done)
-- JWT (token-based) authentication (not-done)
+- unit and functional tests using JEST
+- JWT (token-based) authentication (not done)
 - performance tests using k6 (not-done)
-- noSQL database (not-done)
-- pagination (not-done)
+- noSQL database (not done)
+- pagination (not done)
